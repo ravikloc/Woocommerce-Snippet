@@ -1,0 +1,7 @@
+<?php
+add_action( 'woocommerce_single_product_summary', 'Order_delivery_display_notice', 6 );
+   
+function Order_delivery_display_notice() {
+    echo '<div class="woocommerce-message">Order by 3pm and get it delivered tomorrow!</div>';
+}
+?>
