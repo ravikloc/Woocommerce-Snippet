@@ -1,7 +1,0 @@
-add_filter ( 'woocommerce_product_thumbnails_columns', 'xx_thumb_cols' );
-
-function xx_thumb_cols() {
-
-return 4; // .last class applied to every 4th thumbnail
-
-}
