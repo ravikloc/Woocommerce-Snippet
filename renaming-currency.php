@@ -1,3 +1,4 @@
+<?php
 // Renaming Currency
 
 add_filter('woocommerce_currency_symbol', 'hawkdive_currency_symbol', 10, 2);
@@ -11,3 +12,4 @@ function hawkdive_currency_symbol( $currency_symbol, $currency ) {
      }
      return $currency_symbol;
 }
+?>
