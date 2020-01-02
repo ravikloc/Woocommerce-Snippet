@@ -1,0 +1,15 @@
+WooCommerce 3.0+
+/**
+ * Show product weight on archive pages
+ */
+add_action( 'woocommerce_after_shop_loop_item', 'rs_show_weights', 9 );
+
+function rs_show_weights() {
+
+    global $product;
+    $weight = $product->get_weight();
+
+    if ( $product->has_weight() ) {
+        echo '<div class="product-meta"><span class="product-meta-label">Weight: </span>' . $weight . get_option('woocommerce_weight_unit') . '</div></br>';
+    }
+}
